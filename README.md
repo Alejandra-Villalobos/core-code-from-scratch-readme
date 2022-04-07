@@ -1,4 +1,4 @@
-# core-code-from-scratch-readme
+# Weekly Challenges - Alejandra Villalobos
 ## Week challenges (Tuesday)
 ### 1. Interpreted And Compiled Programming Languages
 An *Interpreted Language* is a cross-platform language that reads and runs the programms line by line. This means we can change a command and see the result immediately. Even though this can be slower, it allows programmers to fix bugs or errors easier.
@@ -17,10 +17,11 @@ Java is both a compiled an interpreted language. First, it is compiled to byteco
   4. PRINT AmountBitcoin
   5. END
 ```
+___
 ## Week challenges (Wednesday)
 ### 1. Your date of birth in the matrix?
 ``A program that converts your year of birth to binary. Javascript:``
-```
+```javascript
   var year = prompt("Enter your year of birth:")
   let i = 0
   let yearBinary = []
@@ -97,3 +98,4 @@ Java is both a compiled an interpreted language. First, it is compiled to byteco
               la $a0, nameInput
               syscall
 ```
+___
