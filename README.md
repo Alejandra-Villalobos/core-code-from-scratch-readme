@@ -17,3 +17,19 @@ Java is both a compiled an interpreted language. First, it is compiled to byteco
   4. PRINT AmountBitcoin
   5. END
 ```
+## Week challenges (Wednesday)
+### 1. Your date of birth in the matrix?
+``A program that converts your year of birth to binary. Javascript:``
+```
+  var year = prompt("Enter your year of birth:")
+  let i = 0
+  let yearBinary = []
+
+  do{
+    yearBinary[i] = Math.trunc(year%2)
+    year = year/2
+    i++
+
+  } while (year>1)
+  console.log("Your year of birth in binary is: " + [yearBinary.reverse().join('')])
+```
