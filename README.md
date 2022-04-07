@@ -1,5 +1,12 @@
-# Weekly Challenges - Alejandra Villalobos
-## Week challenges (Tuesday)
+<h1 align="center">Weekly Challenges - Alejandra Villalobos</h1>
+
+## Index
+
+1. [Week 1](#week-1)
+
+<h1 align="center">Week 1</h1>
+
+## Tuesday
 ### 1. Interpreted And Compiled Programming Languages
 An *Interpreted Language* is a cross-platform language that reads and runs the programms line by line. This means we can change a command and see the result immediately. Even though this can be slower, it allows programmers to fix bugs or errors easier.
 
@@ -18,7 +25,8 @@ Java is both a compiled an interpreted language. First, it is compiled to byteco
   5. END
 ```
 ___
-## Week challenges (Wednesday)
+
+## Wednesday
 ### 1. Your date of birth in the matrix?
 ``A program that converts your year of birth to binary. Javascript:``
 ```javascript
@@ -36,6 +44,7 @@ ___
 ```
 
 ### 2. MIPS
+
 ``A program that adds any two given numbers provided by the user``
 ```
   .data
@@ -98,4 +107,5 @@ ___
               la $a0, nameInput
               syscall
 ```
+
 ___
