@@ -109,3 +109,11 @@ ___
 ```
 
 ___
+
+## Thursday
+### 1. Print even numbers from 0 to 100. Javascript:
+```javascript
+	for (var i = 0; i<=100; i+=2){
+  	console.log(i)
+	}
+```
