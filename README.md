@@ -120,16 +120,31 @@ ___
 
 ### 2. Bad code. Javascript:
 ```javascript
-var cond = false;
+	var cond = false;
 
-/*
-  the operator '==' is used to make an abstract comparison (both values must be the same)
-  the operator '===' is used to make an strict comparison (even the types must be the same)
-  and the operator '=' assigns a value to an object (doesn't make any comparison)
-*/
-if ((cond == true)) {
-  console.log('The cond variable is true');
-} else {
-  console.log('The cond variable is false');
-}
+	/*
+	  the operator '==' is used to make an abstract comparison (both values must be the same)
+	  the operator '===' is used to make an strict comparison (even the types must be the same)
+	  and the operator '=' assigns a value to an object (doesn't make any comparison)
+	*/
+	if ((cond == true)) {
+	  console.log('The cond variable is true');
+	} else {
+	  console.log('The cond variable is false');
+	}
+```
+
+### 3. Bad code 2. Javascript:
+```javascript
+	var n = 100;
+
+	if (n == 100) {
+	  console.log('This is a special number!');
+	}
+	else if (n < 1000 && n%10==0 && n!=100) {
+	  console.log('This number is almost special');
+	}
+	else {
+	  console.log('Just a regular number');
+	}
 ```
