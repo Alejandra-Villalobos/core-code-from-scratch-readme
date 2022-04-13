@@ -117,3 +117,19 @@ ___
   	console.log(i)
 	}
 ```
+
+### 2. Bad code. Javascript:
+```javascript
+var cond = false;
+
+/*
+  the operator '==' is used to make an abstract comparison (both values must be the same)
+  the operator '===' is used to make an strict comparison (even the types must be the same)
+  and the operator '=' assigns a value to an object (doesn't make any comparison)
+*/
+if ((cond == true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+```
