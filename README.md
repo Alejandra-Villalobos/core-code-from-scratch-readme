@@ -3,6 +3,7 @@
 ## Index
 
 1. [Week 1](#week-1)
+2. [Week 2](#week-2)
 
 <h1 align="center">Week 1</h1>
 
@@ -149,3 +150,14 @@ ___
   }
 ```
 ___
+
+<h1 align="center">Week 2</h1>
+
+## Tuesday
+### 1. Multiply. Javascript: 
+```javascript
+  //The return was missing
+  function multiply(a, b){
+    return a * b
+  }
+```
