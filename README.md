@@ -173,3 +173,15 @@ ___
     return total
   }
 ```
+
+### 3. Char From ASCII Value
+``Gets the ASCII char from the given number``
+```javascript
+  function getChar(c){
+  //Validates if "c" is a number 
+  if(typeof(c) === 'number')
+    return String.fromCharCode(c);
+  else
+    return console.error("The input must be a number");
+  }
+```
