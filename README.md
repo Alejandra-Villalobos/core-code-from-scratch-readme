@@ -216,6 +216,16 @@ ___
 ```javascript
   function dutyFree(normPrice, discount, hol){
     let priceDiscount = normPrice*(discount/100)
+    //Math.floor() rounds down the number
     return Math.floor(hol/priceDiscount)
+  }
+```
+
+### 2. Twice As Old
+``Сalculates how many years ago the father was twice as old as his son (or in how many years he will be twice as old)``
+```javascript
+  function twiceAsOld(dadYearsOld, sonYearsOld) {
+    //Math.abs() converts the number to positive
+    return Math.abs(dadYearsOld-(sonYearsOld*2))
   }
 ```
