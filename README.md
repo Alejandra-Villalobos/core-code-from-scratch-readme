@@ -208,3 +208,14 @@ ___
       return 0
   }
 ```
+___
+
+## Wednesday
+### 1. Holiday VIII - Duty Free
+``Returns the ammount of bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday``
+```javascript
+  function dutyFree(normPrice, discount, hol){
+    let priceDiscount = normPrice*(discount/100)
+    return Math.floor(hol/priceDiscount)
+  }
+```
