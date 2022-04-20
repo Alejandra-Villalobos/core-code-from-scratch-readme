@@ -40,7 +40,7 @@ ___
     year = year/2
     i++
 
-  } while (year>1)
+  } while (year>=1)
   console.log("Your year of birth in binary is: " + [yearBinary.reverse().join('')])
 ```
 
@@ -178,10 +178,18 @@ ___
 ``Gets the ASCII char from the given number``
 ```javascript
   function getChar(c){
-  //Validates if "c" is a number 
-  if(typeof(c) === 'number')
-    return String.fromCharCode(c);
-  else
-    return console.error("The input must be a number");
+    //Validates if "c" is a number 
+    if(typeof(c) === 'number')
+      return String.fromCharCode(c);
+    else
+      return console.error("The input must be a number");
+  }
+```
+
+### 4. Binary Addition
+``Returns the sum converted to binary``
+```javascript
+  function addBinary(a,b) {
+    return (a+b).toString(2);
   }
 ```
