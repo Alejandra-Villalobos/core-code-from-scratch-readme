@@ -112,14 +112,14 @@ ___
 ___
 
 ## Thursday
-### 1. Print even numbers from 0 to 100. Javascript:
+### 1. Print even numbers from 0 to 100
 ```javascript
 	for (var i = 0; i<=100; i+=2){
   	console.log(i)
 	}
 ```
 
-### 2. Bad code. Javascript:
+### 2. Bad code
 ```javascript
   var cond = false;
 
@@ -135,7 +135,7 @@ ___
   }
 ```
 
-### 3. Bad code 2. Javascript:
+### 3. Bad code 2
 ```javascript
   var n = 100;
 
@@ -154,10 +154,22 @@ ___
 <h1 align="center">Week 2</h1>
 
 ## Tuesday
-### 1. Multiply. Javascript: 
+### 1. Multiply
 ```javascript
   //The return was missing
   function multiply(a, b){
     return a * b
+  }
+```
+
+### 2. ASCII Total
+``Sums the ASCII code of a string``
+```javascript
+  function uniTotal (string) {
+    var total = 0;
+    for(let i = 0; i<string.length; i++){
+      total += string.charCodeAt(i)
+    }
+    return total
   }
 ```
