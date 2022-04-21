@@ -249,3 +249,19 @@ ___
     return true
   }
 ```
+
+### 4. Fake Binary
+``Replaces any digit below 5 with '0' and any digit 5 and above with '1'``
+```javascript
+  function fakeBin(x){
+    let num = ""
+    for(let i = 0; i<x.length; i++){
+      if(x[i]<5)
+        num = num.concat(0)
+      else 
+        num = num.concat(1)
+    }
+    return num
+  }
+```
+___
