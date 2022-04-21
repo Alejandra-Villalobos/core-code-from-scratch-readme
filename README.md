@@ -274,9 +274,19 @@ ___
     var regex = /!+$/g
     var end = string.search(regex)
     if(end>1)
-      /Returns the string from the beginning to the position where the final '!' signs start
+      //Returns the string from the beginning to the position where the final '!' signs start
       return string.substring(0, end)
     else
       return string
+  }
+```
+
+### 2. Vowel Remover
+``Removes all the vowels in a string``
+```javascript
+  function shortcut (string) {
+    //Regex that searches all the vowels in lowercase
+    let regex = /[aeiou]+/g
+    return string.replace(regex, '')
   }
 ```
