@@ -265,3 +265,18 @@ ___
   }
 ```
 ___
+
+## Thursday
+### 1. Remove All Exclamation Marks From The End Of Sentence 
+```javascript
+  function remove (string) {  
+    //Regular expression that searches all the '!' signs at the end
+    var regex = /!+$/g
+    var end = string.search(regex)
+    if(end>1)
+      /Returns the string from the beginning to the position where the final '!' signs start
+      return string.substring(0, end)
+    else
+      return string
+  }
+```
