@@ -229,3 +229,23 @@ ___
     return Math.abs(dadYearsOld-(sonYearsOld*2))
   }
 ```
+
+### 3. Valid Spacing
+``Validates if there is extra spacing in a string``
+```javascript
+  function validSpacing(s) {
+    //The string can be empty
+    if(s.length==0)
+      return true
+    //There can't be space at the beginning or a the end
+    else if(s.startsWith(' ') || s.endsWith(' '))
+      return false
+    let words = s.split(' ')
+    for(let i = 0; i<=words.length; i++){
+      //After spliting the string, there can't be a blank space
+      if (words[i]==='')
+        return false
+    } 
+    return true
+  }
+```
