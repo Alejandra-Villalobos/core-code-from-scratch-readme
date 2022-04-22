@@ -303,3 +303,27 @@ ___
       return 'Player 2 won!'
   };
 ```
+
+### 4. Persistent Bugger 
+``Takes in a positive number and returns its multiplicative persistence``
+```javascript
+  function persistence(num) {
+    let count = 0;
+    //For 0 iterations
+    if(num<10)
+      return 0
+    do{
+      //Saves every digit individually
+      let splitNums = num.toString().split('');
+      num = 1;
+      for (let i = 0; i < splitNums.length; i++) {
+        //Multiplies the digits
+        num *= splitNums[i];
+      }
+      count++;
+    //It stops when we have only one digit
+    }while(num>=10)
+      return count;
+  }
+```
+___
