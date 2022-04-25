@@ -4,6 +4,7 @@
 
 1. [Week 1](#week-1)
 2. [Week 2](#week-2)
+3. [Week 3](#week-3)
 
 <h1 align="center">Week 1</h1>
 
@@ -327,3 +328,23 @@ ___
   }
 ```
 ___
+
+<h1 align="center">Week 3</h1>
+
+## Monday
+### 1. Who Likes It?
+``Returns the names of people that liked a post``
+```javascript
+  function likes(names) {
+    if(names.length===0)
+      return `no one likes this`
+    else if(names.length===1)
+      return `${names[0]} likes this`
+    else if(names.length===2)
+      return `${names[0]} and ${names[1]} like this`
+    else if(names.length===3)
+      return `${names[0]}, ${names[1]} and ${names[2]} like this`
+    else if(names.length>=4)
+      return `${names[0]}, ${names[1]} and ${(names.length)-2} others like this`
+  }
+```
