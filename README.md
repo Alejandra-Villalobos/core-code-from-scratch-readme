@@ -348,3 +348,14 @@ ___
       return `${names[0]}, ${names[1]} and ${(names.length)-2} others like this`
   }
 ```
+
+### 2. Bit Counting
+``Takes an integer, converts it into binary and returns the number of bits that are equal to one``
+```javascript
+  var countBits = function(n) {
+    var binary = n.toString(2).split('')
+    //converts the string array to an array of numbers
+    var binaryArr = binary.map(Number)
+    return binaryArr.reduce((a,b) => a+b)
+  };
+```
