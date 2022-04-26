@@ -372,3 +372,23 @@ ___
     return arr.join(' ')
   }
 ```
+__
+
+## Tuesday
+### 1. Simple Pig Latin
+``Moves the first letter of a word to the end and adds 'ay'``
+```javascript
+  function pigIt(str){
+    var pigArr = str.split(' ')
+    var newArr = []
+    for (let i = 0; i<pigArr.length; i++){
+      var word = pigArr[i]
+      if(word!='!'&&word!='?'){
+        word = pigArr[i].concat(`${pigArr[i].charAt(0)}ay`)
+        word = word.slice(1,word.length)
+      }
+      newArr.push(word)
+    }
+    return newArr.join(' ')
+  }
+```
