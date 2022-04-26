@@ -359,3 +359,16 @@ ___
     return binaryArr.reduce((a,b) => a+b)
   };
 ```
+
+### 3. Your Order, Please
+``Sorts the string according to the number contained in every word``
+```javascript
+  function order(words){
+    //everything that is not a digit
+    let regex = /\D/gi
+    let arr = words.split(' ')
+    //Leaves just the number in every element of the array to sort them
+    arr.sort((a, b) => a.replace(regex, '') - b.replace(regex, ''))
+    return arr.join(' ')
+  }
+```
