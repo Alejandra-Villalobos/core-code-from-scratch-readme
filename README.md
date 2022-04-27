@@ -438,3 +438,17 @@ ___
   //Check is 0 only if there is the same amount of left and rigth parentheses
   return check === 0 ? true : false
 ```
+
+### 2. Convert string to camel case
+```javascript
+  function toCamelCase(str){
+    //Splits the string depending on the separator 
+    str = str.includes('_') ? str.split('_') : str.split('-')
+    for(let i = 0; i<str.length; i++){
+      //To avoid modifying the first word
+      if(i>0)
+        str[i] = str[i].replace(str[i].charAt(0), str[i].charAt(0).toUpperCase())
+    }
+    return str.join('')
+  }
+```
