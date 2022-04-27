@@ -452,3 +452,17 @@ ___
     return str.join('')
   }
 ```
+
+### 3. Unique In Order
+``Returns a list of items without any elements with the same value next to each other and preserving the original order of elements``
+```javascript
+  var uniqueInOrder=function(iterable){
+    var arr = []
+    for (let i = 0; i<iterable.length; i++){
+      //Pushes the element to the array if it is not the same as the next one
+      if(iterable[i]!=iterable[i+1])
+        arr.push(iterable[i])
+    }
+    return arr
+  }
+```
