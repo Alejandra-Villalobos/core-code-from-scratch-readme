@@ -408,3 +408,14 @@ __
     return count
   }
 ```
+
+### 3. Decode The Morse Code
+``Counts how many elements are duplicated``
+```javascript
+  decodeMorse = function(morseCode){
+    morseCode = morseCode.split('  ').map(e => e.split(' ')
+      .map(letter => MORSE_CODE[letter]).join(''))
+    return morseCode.join(' ').trim()
+  }
+```
+___
