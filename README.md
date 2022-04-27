@@ -392,3 +392,19 @@ __
     return newArr.join(' ')
   }
 ```
+
+### 2. Counting Duplicates
+``Counts how many elements are duplicated``
+```javascript
+  function duplicateCount(text){
+    text = text.toLowerCase().split('').sort()
+    var count = 0
+    for (let i = 0; i<text.length; i++){
+      /*If the last index of the element is different to the current index and the initial
+        index is equal to the current index, adds 1 to the counter*/
+      if(text.lastIndexOf(text[i])!==i && text.indexOf(text[i])===i)
+        count++
+    }
+    return count
+  }
+```
