@@ -419,3 +419,22 @@ __
   }
 ```
 ___
+
+## Wednesday
+### 1. Valid Parentheses
+```javascript
+  function validParentheses(parens) {
+    let check = 0, i = 0;
+    while(check>=0 && i<parens.length){
+      if(parens[i]==='(')
+        check++
+      else
+        check--
+      //there can't be more rigth parentheses than left parentheses consecutively
+      if(check<0)
+        return false
+      i++
+    }
+  //Check is 0 only if there is the same amount of left and rigth parentheses
+  return check === 0 ? true : false
+```
