@@ -466,3 +466,26 @@ ___
     return arr
   }
 ```
+___
+
+
+## Thursday
+### 1. Fold an array
+```javascript
+  function foldArray(array, runs)
+  {
+    //Sets the division one element ahead of the center if the lenth of the array is odd
+    let division = Math.round(array.length/2)
+    let arrLeft = array.slice(0, division)
+    let arrRig = array.slice(division, array.length).reverse()
+    let foldedArr = []
+    for(let i = 0; i<arrRig.length; i++)
+      foldedArr.push(arrLeft[i]+arrRig[i])
+    //If the left size if bigger than the rigth one, adds the last element of the left size to the array
+    if(array.length % 2 !== 0)
+      foldedArr.push(array[division-1])
+    runs--
+    //Runs the function using recursion until we have completed the runs
+    return runs > 0 ? foldArray(foldedArr, runs) : foldedArr
+  }
+```
