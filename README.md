@@ -489,3 +489,28 @@ ___
     return runs > 0 ? foldArray(foldedArr, runs) : foldedArr
   }
 ```
+
+### 2. Fold an array
+```javascript
+  var encryptThis = function(text) {
+    let array = text.split(' ')
+    for (let i = 0; i<array.length; i++){
+      if(array[i].length===1)
+        array[i] = array[i].charCodeAt(0)
+      else if(array[i].length===2)
+        array[i] = `${array[i].charCodeAt(0)}${array[i].charAt(1)}`
+      else if (array[i].length===3){
+        let secondChar = array[i].charAt(1)
+        let lastChar = array[i].charAt(array[i].length-1)
+        array[i] = `${array[i].charCodeAt(0)}${lastChar}${secondChar}`
+      }
+      else {
+        let secondChar = array[i].charAt(1)
+        let lastChar = array[i].charAt(array[i].length-1)
+        array[i] = `${array[i].charCodeAt(0)}${lastChar}${array[i].substring(2,array[i].length-1)}${secondChar}`
+      }     
+    }
+    return array.join(' ')
+  }
+```
+
