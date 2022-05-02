@@ -490,28 +490,23 @@ ___
   }
 ```
 
-### 2. Fold an array
+### 2. Encrypt this!
 ```javascript
   var encryptThis = function(text) {
     let array = text.split(' ')
     for (let i = 0; i<array.length; i++){
-      if(array[i].length===1)
-        array[i] = array[i].charCodeAt(0)
-      else if(array[i].length===2)
-        array[i] = `${array[i].charCodeAt(0)}${array[i].charAt(1)}`
-      else if (array[i].length===3){
-        let secondChar = array[i].charAt(1)
-        let lastChar = array[i].charAt(array[i].length-1)
-        array[i] = `${array[i].charCodeAt(0)}${lastChar}${secondChar}`
-      }
-      else {
-        let secondChar = array[i].charAt(1)
-        let lastChar = array[i].charAt(array[i].length-1)
-        array[i] = `${array[i].charCodeAt(0)}${lastChar}${array[i].substring(2,array[i].length-1)}${secondChar}`
-      }     
+      
+      let firstChar = array[i].charCodeAt(0)
+      let secondChar = array[i].charAt(1)
+      let middleChars = array[i].substring(2,array[i].length-1)
+      let lastChar = array[i].charAt(array[i].length-1)
+      
+      if(array[i].length===1) array[i] = firstChar
+      else if(array[i].length===2) array[i] = `${firstChar}${secondChar}`
+      else if(array[i].length===3)array[i] = `${firstChar}${lastChar}${secondChar}`
+      else array[i] = `${firstChar}${lastChar}${middleChars}${secondChar}` 
     }
     return array.join(' ')
-  }
 ```
 ## 1st Core Challenge
 
