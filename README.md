@@ -513,3 +513,12 @@ ___
 I am Alejandra Villalobos, a computer science student. I'm currently focused on web development studying Javascript, React and Node. I also have knowledge in Databases and other areas. My main goal is to become a successful developer and work in a software company. I'm a responsible and commited person who wants to grow both personally and professionally.
 
 ___
+
+## Wednesday
+# 1. Simple Validation Of A Username
+```javascript
+  function validateUsr(username) {
+    res =  /^([a-z]|\d|_){4,16}$/g
+    return res.test(username)
+  }
+```
