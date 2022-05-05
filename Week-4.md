@@ -16,3 +16,20 @@
     return parseInt(s.replace(res, ''))
   }
 ```
+___
+
+## Thursday
+### 1. String Cleaning
+```javascript
+  function stringClean(s){
+    return s.replace(/\d/g, '')
+  }
+```
+
+### 2. Get Number From String
+```javascript
+  function getNumberFromString(s) {
+    res = /\D/g
+    return parseInt(s.replace(res, ''))
+  }
+```
