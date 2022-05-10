@@ -12,3 +12,18 @@ function findMissingLetter(array){
   } 
 }
 ```
+### 2. Reverse or rotate?
+```javascript
+function revrot(str, sz) {
+  if (sz <= 0 || sz >= str.length || str === '') return '';
+  let chunks = str.match(new RegExp(`\\d{${sz}}`, 'g'));
+  let sum = 0, chunkArray = [];
+  let result = chunks.map((chunk) => {
+    sum = chunk.split('').map((digit) => Math.pow(+digit, 3)).reduce((prev, curr) => prev + curr, 0);
+    chunkArray = chunk.split('');
+    if (sum % 2 === 0) return chunkArray.reverse().join('');
+    return chunkArray.push(chunkArray.shift()), chunkArray.join('');
+  });
+  return result.join('');
+}
+```
