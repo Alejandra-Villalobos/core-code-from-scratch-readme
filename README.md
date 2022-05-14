@@ -26,3 +26,17 @@ function filterDuplicates(data) {
   }
 console.log(filterDuplicates([7,6,4,3,3,4,9,9,9,9,9]))
 ```
+```javascript
+function filterWords(words, letters) {
+    let filterLetters = letters.split('')
+    let newArr = []
+    for(let j=0; j<filterLetters.length; j++){
+      for(let i=0; i<words.length; i++){
+         if(words[j].includes(filterLetters[i])&&newArr.includes(words[j])==false) 
+           newArr.push(words[j])
+      }
+    }
+    return newArr;
+}
+console.log(filterWords(['el', 'he', 'ha'], 'eh'))
+```
