@@ -112,3 +112,9 @@ function find(rats) {
     return rats.reduce((x,y) => {return x + Math.pow(2,y)}, 0)
 }
 ```
+### 1. Array.diff
+```javascript
+function arrayDiff(a, b) {
+   return a.filter((num) => b.includes(num)===false)
+}
+```
