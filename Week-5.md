@@ -104,3 +104,11 @@ export function logPerson(person: Person) {
 
 persons.forEach(logPerson);
 ```
+___
+## Thursday
+### 1. What's Your Poison?
+```javascript
+function find(rats) {
+    return rats.reduce((x,y) => {return x + Math.pow(2,y)}, 0)
+}
+```
