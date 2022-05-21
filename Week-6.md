@@ -148,3 +148,25 @@ export function partsSums(ls: number[]): number[] {
   return sumArr
 }
 ```
+### 5. Consecutive Strings
+```typescript
+export function longestConsec(strarr: string[], k: number): string {
+  if (strarr.length === 0 || k > strarr.length || k <= 0) return '';
+  let concatedArr: string[] = [];
+  if(k>1){
+     for(let i = 0; i<strarr.length-1; i++){
+      concatedArr.push(strarr.slice(i, i+k).join(''))
+     }
+  }
+  else concatedArr=strarr.map(String)
+  let maxLength: number = 0;
+  let longWord: string = '';
+  for(let i = 0; i<concatedArr.length; i++){
+    if(concatedArr[i].length>maxLength){
+      maxLength = concatedArr[i].length
+      longWord = concatedArr[i]
+    }
+  }
+  return longWord
+}
+```
