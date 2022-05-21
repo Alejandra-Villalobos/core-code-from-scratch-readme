@@ -114,3 +114,18 @@ export function duplicateEncode(word: string){
     return replacedArr.join('')
 }
 ```
+### 2. Find The Odd Int
+```typescript
+export const findOdd = (xs: number[]): number => {
+  let sorted: number[] = xs.sort();
+  let oddInt: number = 0;
+  for(let i = 0; i<sorted.length; i++){
+    if((sorted.lastIndexOf(sorted[i])-sorted.indexOf(sorted[i]))%2===0){
+      oddInt = sorted[i]; 
+      break;
+    }
+  }
+  return oddInt;
+};
+
+```
