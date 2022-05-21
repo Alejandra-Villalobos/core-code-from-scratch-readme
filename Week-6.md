@@ -68,7 +68,7 @@ export class G964 {
     }
 }
 ```
-### 4. Valid Braces
+### 4. Tic-Tac-Toe
 ```javascript
 function solveTTT(board) {
   var win = [
@@ -87,3 +87,16 @@ function solveTTT(board) {
   for (var i in board) if (board[i] == '') return +i;
 }
 ```
+### 5. Tic-Tac-Toe-Like Table Generator 
+```javascript
+const pad = (str, char) => char + str + char;
+const row = (arr) => arr.map((x) => pad(x, ' ')).join('|');
+const line = (w) => pad([...Array(w)].fill('---').join('-'), '\n');
+const reshape = (arr, w, res = []) =>
+  arr.length > 0
+    ? reshape(arr.slice(w), w, res.concat([arr.slice(0, w)]))
+    : res;
+const displayBoard = (board, width) =>
+  reshape(board, width).map(row).join(line(width));
+```
+
