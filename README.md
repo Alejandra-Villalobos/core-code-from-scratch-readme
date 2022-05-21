@@ -1,14 +1,16 @@
 Test examples
 
-```javascript
+```typescript
 function findSumPair(numbers, k) {
   let pair = [0, 0]
+  for(let j =0; j<numbers.length; j++){
     for(let i =0; i<numbers.length; i++){
-      if((numbers[i]+numbers[i+1])===k){
-        pair = [i, i+1]
+      if((numbers[i]+numbers[j])===k&&i!=j){
+        pair = [i, j]
         break;
       }
     }
+  } 
   return pair; 
 }
 console.log(findSumPair([1,5,8,1,2],13))
