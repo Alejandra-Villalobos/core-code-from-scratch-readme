@@ -99,4 +99,18 @@ const reshape = (arr, w, res = []) =>
 const displayBoard = (board, width) =>
   reshape(board, width).map(row).join(line(width));
 ```
-
+___
+## Wednesday
+### 1. Duplicate Encoder
+```typescript
+export function duplicateEncode(word: string){
+  let arr = word.toLowerCase().split('');
+  let replacedArr: string[] = [];
+  arr.forEach((w: string) => {
+    if(arr.indexOf(w) === arr.lastIndexOf(w))
+      replacedArr.push("(")
+    else replacedArr.push(")")
+  })
+    return replacedArr.join('')
+}
+```
