@@ -31,3 +31,15 @@ export function accum(s: string): string {
                 .join('-')
 }
 ```
+
+### 4. A Wolf In Sheep's Clothing
+```typescript
+export function warnTheSheep(queue: string[]): string {
+  let queueReverse = queue.reverse();
+  let wolfIndex = queueReverse.indexOf('wolf');
+  if('wolf'===queueReverse[0])
+    return `Pls go away and stop eating my sheep`
+  else
+    return `Oi! Sheep number ${wolfIndex}! You are about to be eaten by a wolf!`
+}
+```
