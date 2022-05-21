@@ -56,3 +56,15 @@ export function thirt(n: number): number {
   else return thirt(result);
 }
 ```
+### 2. Playing with digits
+```typescript
+export class G964 {
+
+    public static digPow = (n: number, p: number) => {
+      let numArr = n.toString().split('');
+      let sum = numArr.map(Number).reduce((a: number, b: number) => a + Math.pow(b, p++), 0)
+      if (sum % n === 0) return sum / n;
+      else return -1;
+    }
+}
+```
