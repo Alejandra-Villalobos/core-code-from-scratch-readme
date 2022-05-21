@@ -136,3 +136,15 @@ export class G964 {
   }
 }
 ```
+### 4. Sums of Parts
+```typescript
+export function partsSums(ls: number[]): number[] {
+  let sumArr: number[] = [];
+  let x: number = ls.reduce((a, b)=> a+b, 0)
+  sumArr.push(x);
+  for(let i = 0; i<ls.length; i++){
+    sumArr.push(sumArr[i]-ls[i]);
+  }
+  return sumArr
+}
+```
