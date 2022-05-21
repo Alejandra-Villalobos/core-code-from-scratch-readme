@@ -8,7 +8,7 @@ export function squareSum(numbers: number[]): number {
 }
 ```
 
-### 1. Growth Of A Population
+### 2. Growth Of A Population
 ```typescript
 export class G964 {
 
@@ -20,5 +20,14 @@ export class G964 {
       }while(p0<p)
       return years
     }
+}
+```
+### 3. Growth Of A Population
+```typescript
+export function accum(s: string): string {
+  let arr = s.split('');
+  return arr.map((letter: string, index: number) => 
+               `${letter.toUpperCase()}${letter.toLowerCase().repeat(index)}`)
+                .join('-')
 }
 ```
