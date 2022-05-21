@@ -68,3 +68,22 @@ export class G964 {
     }
 }
 ```
+### 4. Valid Braces
+```javascript
+function solveTTT(board) {
+  var win = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (var i in win)
+    if (win[i].map((x) => board[x]).join('') == 'XX')
+      return win[i].reduce((x, y) => (board[y] == '' ? x + y : x), 0);
+  for (var i in board) if (board[i] == '') return +i;
+}
+```
