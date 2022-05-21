@@ -43,3 +43,16 @@ export function warnTheSheep(queue: string[]): string {
     return `Oi! Sheep number ${wolfIndex}! You are about to be eaten by a wolf!`
 }
 ```
+___
+## Tuesday
+### 1. A Rule Of Divisibility By 13
+```typescript
+export function thirt(n: number): number {
+  let rem = [1, 10, 9, 12, 3, 4];
+  let reversed = n.toString().split('').reverse();
+  let result = reversed.map((x: string, y: number) => parseInt(x) * rem[y%6])
+      .reduce((a: number, b: number) => (a += b));
+  if(n === result) return result;
+  else return thirt(result);
+}
+```
