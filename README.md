@@ -42,3 +42,14 @@ function filterWords(words, letters) {
 }
 console.log(filterWords(['el', 'he', 'ha'], 'eh'))
 ```
+```javascript
+function isDuoDigit(number) {
+  let num = number.toString().split('').sort();
+  for (let i = 0; i<num.length; i++){
+    if(num.indexOf(num[i])!==num.lastIndexOf(num[i]))
+      num.splice(num.lastIndexOf(num[i]),1)
+  }
+  return num.length>2 ? 'n' : 'y'
+}
+console.log(isDuoDigit(-2020))
+```
