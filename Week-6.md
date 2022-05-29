@@ -170,3 +170,54 @@ export function longestConsec(strarr: string[], k: number): string {
   return longWord
 }
 ```
+## Thursday
+### 1. Tile
+```typescript
+export class Tile {
+  letter: string;
+  value: number;
+
+  constructor(letter: string, value: number) {
+    this.letter = letter;
+    this.value = value;
+  }
+
+  printTile() {
+    console.log(`
+        ___________________________
+          Letter: ${this.letter}
+          Value: ${this.value}
+        ___________________________
+    `);
+  }
+}
+```
+### 1. Time
+```typescript
+export class Time {
+  hour: number;
+  minute: number;
+  second: number;
+
+  constructor(hour: number, minute: number, second: number) {
+    this.hour = hour;
+    this.minute = minute;
+    this.second = second;
+  }
+
+  getInSeconds(): number {
+    return this.hour*60*60 + this.minute*60 + this.second;
+  }
+  
+  printTime() {
+    console.log(`
+        ___________________________
+          Hours: ${this.hour}
+          Minutes: ${this.minute}
+          Seconds: ${this.second}
+        ___________________________
+    `);
+  }
+
+}
+```
