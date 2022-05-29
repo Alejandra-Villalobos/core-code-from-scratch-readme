@@ -53,3 +53,9 @@ function isDuoDigit(number) {
 }
 console.log(isDuoDigit(-2020))
 ```
+```javascript
+function filterWords(words: string[], letters: string): string[] {
+    let lts: string[] = letters.split('');
+    return words.filter((w: string) => lts.some((l: string) => w.includes(l)));
+}
+```
