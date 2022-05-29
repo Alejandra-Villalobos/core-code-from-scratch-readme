@@ -192,7 +192,7 @@ export class Tile {
   }
 }
 ```
-### 1. Time
+### 2. Time
 ```typescript
 export class Time {
   hour: number;
@@ -217,6 +217,42 @@ export class Time {
           Seconds: ${this.second}
         ___________________________
     `);
+  }
+
+}
+```
+### 3. Rational
+```typescript
+export class Rational {
+  numerator: number;
+  denominator: number;
+
+  constructor(numerator: number, denominator: number) {
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  printRational() {
+    console.log(`${this.numerator} / ${this.denominator}`);
+  }
+  
+  invert() {
+    [this.numerator, this.denominator] = [this.denominator, this.numerator];
+  }
+  
+  toFloat(): number {
+    return this.numerator / this.denominator;
+  }
+  
+  gcd(n: number, d: number): number {
+    if (d == 0) return n;
+    return this.gcd(d, n % d);
+  }
+
+  reduce() {
+    const gcd = this.gcd(this.numerator, this.denominator);
+    this.numerator = this.numerator / gcd;
+    this.denominator = this.denominator / gcd;
   }
 
 }
