@@ -59,3 +59,17 @@ function filterWords(words: string[], letters: string): string[] {
     return words.filter((w: string) => lts.some((l: string) => w.includes(l)));
 }
 ```
+```javascript
+function calculateTotalPrice(prices, discount) {
+  let max = 0;
+  prices.map((item)=>{
+    if(item>max){
+      max=item
+    }
+  })
+  prices.splice(prices.indexOf(max), 1, max-(max*discount/100))
+  return Math.trunc(prices.reduce((a,b)=>a+b,0));
+}
+
+console.log(calculateTotalPrice([1,2,10],50))
+```
