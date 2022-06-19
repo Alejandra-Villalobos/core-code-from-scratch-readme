@@ -19,8 +19,9 @@ ___
 ## Wednesday
 ### Node.JS Core Understanding
 1. What is Node.JS?
-  Node.js is a Javascript environment that helps us build apps and see their changes while we are building them. It also has a lot of libraries available for developers   to use for free.
-2. What problem does Node.JS solve?
+  Node.js is a Javascript environment that helps us build apps and see their changes while we are building them. It also has a lot of libraries available for 
+  developers   to use for free.
+3. What problem does Node.JS solve?
   With Node.js we can run apps in a browser in buildtime, this helps identify errors and fix them quickly
 3. What is the V8 Javascript Engine?
   V8 is the engine that compiles Javascript in Google Chrome. Node.js uses V8 to execute apps in real-time while coding.
@@ -45,3 +46,11 @@ ___
   Core Modules: which are the ones already included in Node.
   Local Modules: The ones we can create and export/import
   Third Party Modules: These are installed when we use a node library 
+  
+### Client-Server Model
+1. What is a Server?
+  A server is a device (it can be a software or hardware) that provides a service when it is requested by a user.
+2. Why is a Client?
+  A client is the user who makes a request.
+3. Is a server just another physical computer?
+  A server can be a virtual machine or a physical computer, but it always depends on a hardware.
