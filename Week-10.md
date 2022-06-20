@@ -61,3 +61,22 @@ ___
   client-server model.
 #### 5. Is the client-server model applicable only to the Web?
   This model can be used in any situation that requires to send and receive information. It's applicable in mobile development, videogames, etc.
+___
+## Thursday
+#### 1. What is an API?
+  An Application Programming Interface (API) makes the connection between the backend and the fronted, in order to exchange information.
+#### 2. What is a Protocol?
+  A Protocol is a set of rules that need to be followed to send data across the network. It has to be secure and reliable.
+#### 3. Is the term API only applicable to the communication of programs over the Internet?
+  Not necessarily. APIs can be use inside the same program to communicate to other modules.
+#### 4. Why is structured communication between two programs important?
+  Because clients rely on programs to get the correct information. Communication between programs needs follow protocols to avoid mistakes.
+#### 5. Is an API just another program or a standard?
+  An API is a standard that establishes the way data is processed inside programs.
+#### 6. Do you know any API? Can you list at least 5 examples of APIs?
+  There are many APIs free to use in projects:
+  - Cat Fact API - Random facts about cats
+  - PokeApi - Pokemons
+  - Agify.io - Predicts the age of a name
+  - Dog API - Collection of dog pictures
+  - RandomUser - Generates a random user data
